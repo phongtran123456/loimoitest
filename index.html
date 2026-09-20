@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="vi-VN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f5ede1">
+  <meta name="description" content="Một lời mời nho nhỏ. Cùng chọn ngày, giờ và những điều vui mình sẽ làm với nhau.">
+  <title data-i18n="app.title">Mình hẹn nhau nhé?</title>
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+  <link rel="preload" href="./assets/invitation-envelope.webp" as="image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <script>
+    // Open this Vietnamese invitation in Vietnamese, without replacing a saved choice.
+    // Unsupported locales and missing translations still fall back to English.
+    try {
+      if (localStorage.getItem('eazo.locale') === null) localStorage.setItem('eazo.locale', 'vi-VN');
+    } catch (_) {}
+  </script>
+  <script src="./i18n.js" defer></script>
+  <script src="./app.js" defer></script>
+  <script src="https://cdn.eazo.ai/platform-assets/inspector.js" defer></script>
+</head>
+<body>
+  <header class="page-header">
+    <label class="language-control">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c5 5 5 13 0 18-5-5-5-13 0-18Z"/></svg>
+      <span class="sr-only" data-i18n="language.label">Ngôn ngữ</span>
+      <select data-i18n-locale-select data-i18n-aria-label="language.label" aria-label="Ngôn ngữ">
+        <option value="vi-VN" data-i18n="language.viVN">Tiếng Việt</option>
+        <option value="en-US" data-i18n="language.enUS">English</option>
+        <option value="zh-CN" data-i18n="language.zhCN">简体中文</option>
+        <option value="system" data-i18n="language.system">Theo thiết bị</option>
+      </select>
+      <svg class="chevron" viewBox="0 0 16 16" aria-hidden="true"><path d="m4 6 4 4 4-4"/></svg>
+    </label>
+  </header>
+
+  <main>
+    <article class="paper">
+      <svg class="decor decor-one" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3v26M3 16h26M7 7l18 18M7 25 25 7"/></svg>
+      <svg class="decor decor-two" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3c0 8-5 13-13 13 8 0 13 5 13 13 0-8 5-13 13-13-8 0-13-5-13-13Z"/></svg>
+
+      <section class="view invitation" id="invitation" aria-labelledby="invite-title">
+        <div class="topline">
+          <span data-i18n="invite.eyebrow">Một lời mời nho nhỏ</span>
+          <span class="postmark" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M7 21c-5-5-4-11 1-12 4-1 7 3 8 5 1-2 4-6 8-5 5 1 6 7 1 12l-9 8Z"/></svg></span>
+        </div>
+        <img class="envelope" src="./assets/invitation-envelope.webp" alt="" width="551" height="602">
+        <h1 id="invite-title" tabindex="-1"><span data-i18n="invite.title">Thi có muốn</span> <em data-i18n="invite.titleAccent">đi đâu với tui hog :3</em></h1>
+        <p class="subtitle invite-subtitle" data-i18n="invite.subtitle">Để một ngày bình thường trở nên đáng nhớ hơn.</p>
+        <div class="playground" id="playground">
+          <button class="yes" id="yes" type="button" data-i18n="invite.yes">Có chứ!</button>
+          <button class="no" id="no" type="button" data-i18n="invite.no" data-i18n-aria-label="invite.noLabel" aria-label="Không — nút tinh nghịch sẽ chạy đi" aria-describedby="hint">Không</button>
+        </div>
+        <p class="bottom-note" id="hint" aria-live="polite" aria-atomic="true">Một cuộc hẹn, nhiều niềm vui.</p>
+      </section>
+
+      <section class="view planner" id="planner" aria-labelledby="planner-title" hidden>
+        <div class="stepbar">
+          <button class="back back-with-icon" id="back" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 6-6 6 6 6M8 12h13"/></svg><span data-i18n="planner.back">Quay lại</span></button>
+          <div class="steps" role="img" data-i18n-aria-label="planner.step" aria-label="Bước 2 trên 3"><i class="step" aria-hidden="true"></i><i class="step active" aria-hidden="true"></i><i class="step" aria-hidden="true"></i></div>
+        </div>
+        <h2 id="planner-title" tabindex="-1"><span data-i18n="planner.title">Vậy mình</span> <em data-i18n="planner.titleAccent">hẹn nhau nhé.</em></h2>
+        <p class="subtitle" data-i18n="planner.subtitle">Thi chọn thời gian, mình chọn niềm vui.</p>
+
+        <form id="plan-form" novalidate>
+          <div class="form-row">
+            <label class="field"><span data-i18n="planner.date">Ngày nào nhỉ?</span><input type="date" id="date" required max="9999-12-31" data-i18n-aria-label="planner.dateLabel" aria-label="Chọn ngày, tháng, năm" aria-describedby="error"></label>
+            <label class="field"><span data-i18n="planner.time">Mấy giờ Thi rảnh?</span><input type="time" id="time" value="17:30" required step="60" data-i18n-aria-label="planner.timeLabel" aria-label="Chọn giờ và phút" aria-describedby="error local-time-note"></label>
+          </div>
+          <p class="time-note" id="local-time-note" data-i18n="planner.localTime">Thời gian theo giờ trên thiết bị của Thi.</p>
+          <div class="field-title" id="activity-title"><span data-i18n="planner.activities">Mình cùng làm gì?</span> <span class="optional" id="activities-help" data-i18n="planner.multiple">(chọn một hoặc nhiều)</span></div>
+          <div class="activities" id="activities" role="group" aria-labelledby="activity-title" aria-describedby="error"></div>
+          <label class="other"><span class="sr-only" data-i18n="planner.customLabel">Hoạt động khác, không bắt buộc</span><input id="custom" type="text" maxlength="100" autocomplete="off" data-i18n-placeholder="planner.customPlaceholder" data-i18n-aria-label="planner.customLabel" placeholder="Hay một ý tưởng khác của Thi…" aria-label="Hoạt động khác, không bắt buộc"></label>
+          <p class="error" id="error" role="alert" hidden></p>
+          <div class="form-footer">
+            <span class="quiet" data-i18n="planner.footer">Một kế hoạch nhỏ cho một ngày thật vui.</span>
+            <button class="primary confirm-button" type="submit"><span data-i18n="planner.confirm">Chốt lịch hẹn</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m-5-5 5 5-5 5"/></svg></button>
+          </div>
+        </form>
+      </section>
+
+      <section class="view summary" id="summary" aria-labelledby="summary-title" hidden>
+        <div class="stepbar">
+          <span class="eyebrow" data-i18n="summary.eyebrow">Lời hẹn của chúng mình</span>
+          <div class="steps" role="img" data-i18n-aria-label="summary.step" aria-label="Bước 3 trên 3"><i class="step" aria-hidden="true"></i><i class="step" aria-hidden="true"></i><i class="step active" aria-hidden="true"></i></div>
+        </div>
+        <img class="envelope" src="./assets/invitation-envelope.webp" alt="" width="551" height="602">
+        <h2 id="summary-title" tabindex="-1"><span data-i18n="summary.title">Có hẹn rồi,</span> <em data-i18n="summary.titleAccent">vui quá!</em></h2>
+        <p class="subtitle" data-i18n="summary.subtitle">Giữ một khoảng nhỏ trong ngày cho nhau.</p>
+        <dl class="ticket">
+          <div class="ticket-row"><dt data-i18n="summary.date">Ngày hẹn</dt><dd class="date" id="result-date"></dd></div>
+          <div class="ticket-row"><dt data-i18n="summary.time">Vào lúc</dt><dd id="result-time"></dd></div>
+          <div class="ticket-row"><dt data-i18n="summary.activities">Mình sẽ</dt><dd id="result-activities"></dd></div>
+        </dl>
+        <button class="primary" id="edit" type="button" data-i18n="summary.edit">Sửa lịch hẹn</button>
+        <button class="back" id="restart" type="button" data-i18n="summary.restart">Về lời mời ban đầu</button>
+        <p class="quiet summary-disclaimer" data-i18n="summary.notice">Lịch hẹn chỉ hiển thị tại đây, chưa được gửi cho ai.</p>
+      </section>
+    </article>
+  </main>
+  <noscript><p class="no-script" data-i18n="app.noScript">Bật JavaScript để mở lời mời và chọn lịch hẹn nhé.</p></noscript>
+</body>
+</html>
