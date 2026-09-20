@@ -1,0 +1,72 @@
+{
+  "language": {
+    "label": "Ngôn ngữ",
+    "system": "Theo thiết bị",
+    "enUS": "English",
+    "zhCN": "简体中文",
+    "viVN": "Tiếng Việt"
+  },
+  "app": {
+    "title": "Mình hẹn nhau nhé?",
+    "noScript": "Bật JavaScript để mở lời mời và chọn lịch hẹn nhé."
+  },
+  "invite": {
+    "eyebrow": "Một lời mời nho nhỏ",
+    "title": "Thi có muốn",
+    "titleAccent": "đi đâu với tui hog :3",
+    "subtitle": "Để một ngày bình thường trở nên đáng nhớ hơn.",
+    "yes": "Có chứ!",
+    "no": "Không",
+    "noLabel": "Không — nút tinh nghịch sẽ chạy đi",
+    "hints": {
+      "default": "Một cuộc hẹn, nhiều niềm vui.",
+      "dodge1": "Ơ kìa, nút này hơi nhút nhát!",
+      "dodge2": "Bắt được mình rồi tính nhé.",
+      "dodge3": "Còn nút Có vẫn đang đợi Thi."
+    }
+  },
+  "planner": {
+    "back": "Quay lại",
+    "step": "Bước 2 trên 3",
+    "title": "Vậy mình",
+    "titleAccent": "hẹn nhau nhé.",
+    "subtitle": "Thi chọn thời gian, mình chọn niềm vui.",
+    "date": "Ngày nào nhỉ?",
+    "dateLabel": "Chọn ngày, tháng, năm",
+    "time": "Mấy giờ Thi rảnh?",
+    "timeLabel": "Chọn giờ và phút",
+    "localTime": "Thời gian theo giờ trên thiết bị của Thi.",
+    "activities": "Mình cùng làm gì?",
+    "multiple": "(chọn một hoặc nhiều)",
+    "customLabel": "Hoạt động khác, không bắt buộc",
+    "customPlaceholder": "Hay một ý tưởng khác của Thi…",
+    "footer": "Một kế hoạch nhỏ cho một ngày thật vui.",
+    "confirm": "Chốt lịch hẹn"
+  },
+  "activities": {
+    "library": "Ra thư viện",
+    "coffee": "Uống cà phê",
+    "movie": "Xem phim",
+    "study": "Cùng học bài",
+    "park": "Đi công viên",
+    "food": "Đi ăn"
+  },
+  "errors": {
+    "required": "Chọn đủ ngày và giờ cho cuộc hẹn nhé.",
+    "future": "Chọn một ngày và giờ hợp lệ trong tương lai nhé.",
+    "activity": "Chọn một hoạt động hoặc viết ý tưởng của Thi nhé."
+  },
+  "summary": {
+    "eyebrow": "Lời hẹn của chúng mình",
+    "step": "Bước 3 trên 3",
+    "title": "Có hẹn rồi,",
+    "titleAccent": "vui quá!",
+    "subtitle": "Giữ một khoảng nhỏ trong ngày cho nhau.",
+    "date": "Ngày hẹn",
+    "time": "Vào lúc",
+    "activities": "Mình sẽ",
+    "edit": "Sửa lịch hẹn",
+    "restart": "Về lời mời ban đầu",
+    "notice": "Lịch hẹn chỉ hiển thị tại đây, chưa được gửi cho ai."
+  }
+}
