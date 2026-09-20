@@ -1,0 +1,72 @@
+{
+  "language": {
+    "label": "Language",
+    "system": "System default",
+    "enUS": "English",
+    "zhCN": "简体中文",
+    "viVN": "Tiếng Việt"
+  },
+  "app": {
+    "title": "Shall we make a little plan?",
+    "noScript": "Turn on JavaScript to open your invitation and make a plan."
+  },
+  "invite": {
+    "eyebrow": "A little invitation",
+    "title": "Thi, would you like to",
+    "titleAccent": "go somewhere with me? :3",
+    "subtitle": "Let's make an ordinary day a little more memorable.",
+    "yes": "Of course!",
+    "no": "No",
+    "noLabel": "No — this playful button runs away",
+    "hints": {
+      "default": "One little plan. Plenty of happy moments.",
+      "dodge1": "Oh! This button is a little shy.",
+      "dodge2": "Catch me if you can!",
+      "dodge3": "The Yes button is still waiting for Thi."
+    }
+  },
+  "planner": {
+    "back": "Go back",
+    "step": "Step 2 of 3",
+    "title": "Then let's",
+    "titleAccent": "make a plan.",
+    "subtitle": "Thi picks the time. We'll find the fun.",
+    "date": "Which day?",
+    "dateLabel": "Choose the day, month, and year",
+    "time": "When is Thi free?",
+    "timeLabel": "Choose the hour and minute",
+    "localTime": "Times use the local time zone on Thi's device.",
+    "activities": "What shall we do?",
+    "multiple": "(choose one or more)",
+    "customLabel": "Another activity, optional",
+    "customPlaceholder": "Or a little idea from Thi…",
+    "footer": "A little plan for a lovely day.",
+    "confirm": "It's a date"
+  },
+  "activities": {
+    "library": "Visit the library",
+    "coffee": "Get coffee",
+    "movie": "Watch a movie",
+    "study": "Study together",
+    "park": "Go to the park",
+    "food": "Grab a bite"
+  },
+  "errors": {
+    "required": "Choose a date and a time for our little plan.",
+    "future": "Choose a valid date and time in the future.",
+    "activity": "Choose an activity or write one of Thi's own ideas."
+  },
+  "summary": {
+    "eyebrow": "Our little plan",
+    "step": "Step 3 of 3",
+    "title": "It's a date,",
+    "titleAccent": "can't wait!",
+    "subtitle": "Save a little space in your day for each other.",
+    "date": "On",
+    "time": "At",
+    "activities": "We'll",
+    "edit": "Edit our plan",
+    "restart": "Back to the invitation",
+    "notice": "This plan is only shown here. It hasn't been sent to anyone."
+  }
+}
