@@ -1,0 +1,72 @@
+{
+  "language": {
+    "label": "语言",
+    "system": "跟随系统",
+    "enUS": "English",
+    "zhCN": "简体中文",
+    "viVN": "Tiếng Việt"
+  },
+  "app": {
+    "title": "一起约个时间吧？",
+    "noScript": "请启用 JavaScript，打开邀请并安排见面时间。"
+  },
+  "invite": {
+    "eyebrow": "一份小小的邀请",
+    "title": "Thi，愿意",
+    "titleAccent": "和我一起出去逛逛吗 :3",
+    "subtitle": "让平凡的一天，多一点值得记住的快乐。",
+    "yes": "当然愿意！",
+    "no": "不去",
+    "noLabel": "不去——这个调皮的按钮会躲开",
+    "hints": {
+      "default": "一个小约定，许多开心的瞬间。",
+      "dodge1": "哎呀，这个按钮有点害羞！",
+      "dodge2": "先抓到我再说吧！",
+      "dodge3": "“当然愿意”还在这里等 Thi。"
+    }
+  },
+  "planner": {
+    "back": "返回",
+    "step": "第 2 步，共 3 步",
+    "title": "那就",
+    "titleAccent": "约个时间吧。",
+    "subtitle": "Thi 来选时间，我们一起找快乐。",
+    "date": "选哪一天？",
+    "dateLabel": "选择年、月、日",
+    "time": "Thi 几点有空？",
+    "timeLabel": "选择小时和分钟",
+    "localTime": "时间以 Thi 设备的本地时区为准。",
+    "activities": "一起做什么？",
+    "multiple": "（可选一项或多项）",
+    "customLabel": "其他活动，选填",
+    "customPlaceholder": "或者，写下 Thi 的小点子……",
+    "footer": "一个小计划，开启美好的一天。",
+    "confirm": "就这么约定"
+  },
+  "activities": {
+    "library": "去图书馆",
+    "coffee": "喝咖啡",
+    "movie": "看电影",
+    "study": "一起学习",
+    "park": "逛公园",
+    "food": "一起吃饭"
+  },
+  "errors": {
+    "required": "请为我们的计划选好日期和时间。",
+    "future": "请选择一个有效的未来日期和时间。",
+    "activity": "选一个活动，或写下 Thi 自己的想法吧。"
+  },
+  "summary": {
+    "eyebrow": "我们的小约定",
+    "step": "第 3 步，共 3 步",
+    "title": "约好啦，",
+    "titleAccent": "好期待！",
+    "subtitle": "在一天里，为彼此留一小段时光。",
+    "date": "日期",
+    "time": "时间",
+    "activities": "一起",
+    "edit": "修改计划",
+    "restart": "回到最初的邀请",
+    "notice": "计划仅显示在此页面，尚未发送给任何人。"
+  }
+}
